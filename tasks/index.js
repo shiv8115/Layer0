@@ -18,3 +18,13 @@
 //
 task("incrementCounter", "increment the destination OmniCounter", require("./incrementCounter"))
     .addParam("targetNetwork", "the target network name, ie: fuji, or mumbai, etc (from hardhat.config.js)")
+
+    //
+
+    task("oftSend", "send tokens to another chain", require("./oftSend"))
+    .addParam("qty", "qty of tokens to send")
+    .addParam("targetNetwork", "the target network to let this instance receive messages from")
+    .addParam("isminted", "true for mint and false for burn")
+    .addOptionalParam("localContract", "Name of local contract if the names are different")
+    .addOptionalParam("remoteContract", "Name of remote contract if the names are different")
+    .addOptionalParam("contract", "If both contracts are the same name")
