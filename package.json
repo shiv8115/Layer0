@@ -21,6 +21,7 @@
   "dependencies": {
     "@layerzerolabs/solidity-examples": "^0.0.10",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@openzeppelin/contracts": "^4.9.0",
     "hardhat-deploy": "^0.11.25",
     "hardhat-deploy-ethers": "^0.3.0-beta.13"
   }
